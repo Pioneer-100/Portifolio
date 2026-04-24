@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,13 +22,37 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to a backend service
-    setFormStatus('Message sent successfully!');
-    setFormData({ name: '', email: '', subject: '', message: '' });
     
-    setTimeout(() => {
-      setFormStatus('');
-    }, 3000);
+    // EmailJS configuration from environment variables
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+    const toEmail = process.env.REACT_APP_EMAILJS_TO_EMAIL || 'rzumba.uni@gmail.com';
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+      to_email: toEmail
+    };
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully!', response.status, response.text);
+        setFormStatus('Message sent successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => {
+          setFormStatus('');
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+        setFormStatus('Failed to send message. Please try again.');
+        setTimeout(() => {
+          setFormStatus('');
+        }, 3000);
+      });
   };
 
   const contactInfo = [
