@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -16,35 +15,34 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', to: '/' },
-    { name: 'About', to: '/about' },
-    { name: 'Skills', to: '/skills' },
-    // { name: 'Experience', to: '/experience' },
-    { name: 'Education', to: '/education' },
-    { name: 'Projects', to: '/projects' },
-    { name: 'Contact', to: '/contact' },
+    { name: 'Home', to: '#home' },
+    { name: 'About', to: '#about' },
+    { name: 'Skills', to: '#skills' },
+    { name: 'Education', to: '#education' },
+    { name: 'Projects', to: '#projects' },
+    { name: 'Contact', to: '#contact' },
   ];
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
-        <Link to="/" className="navbar-logo" onClick={() => setMobileMenuOpen(false)}>
+        <a href="#home" className="navbar-logo" onClick={() => setMobileMenuOpen(false)}>
           <span className="logo-text">
             ROLLAND ZUMBA
             <div className='underline'></div>
           </span>
-        </Link>
+        </a>
 
         <ul className={`navbar-menu ${mobileMenuOpen ? 'active' : ''}`}>
           {navItems.map((item) => (
             <li key={item.name}>
-              <NavLink
-                to={item.to}
-                className={({ isActive }) => `navbar-link ${isActive ? 'active' : ''}`}
+              <a
+                href={item.to}
+                className="navbar-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
-              </NavLink>
+              </a>
             </li>
           ))}
         </ul>

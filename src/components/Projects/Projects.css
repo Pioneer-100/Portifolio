@@ -53,7 +53,7 @@
 .project-card:hover,
 .project-card:focus-within {
   transform: translateY(-10px);
-  /*box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);*/
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   outline: none;
 }
 
@@ -92,7 +92,7 @@
 
 .project-card:hover .project-overlay,
 .project-card:focus-within .project-overlay {
-  opacity: 0.9;
+  opacity: 0.2;
 }
 
 .project-links {

@@ -18,8 +18,8 @@ const Hero = () => {
             Specialized in creating robust, scalable, and user-friendly applications.
           </p>
           <div className="hero-buttons">
-            <a href="/projects" className="btn btn-primary">View My Work</a>
-            <a href="/contact" className="btn btn-secondary">Get In Touch</a>
+            <a href="#projects" className="btn btn-primary">View My Work</a>
+            <a href="#contact" className="btn btn-secondary">Get In Touch</a>
           </div>
           <div className="hero-social">
             <a href="https://github.com/Pioneer-100" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
