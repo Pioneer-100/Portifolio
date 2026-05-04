@@ -12,10 +12,10 @@ const Hero = () => {
           <h1 className="hero-title">
             Hi, I'm <span className="hero-title">Rolland </span>
           </h1>
-          <h2 className="hero-subtitle">Software Developer</h2>
+          <h2 className="hero-subtitle">Aspiring Cloud Engineer</h2>
           <p className="hero-description">
-            I build exceptional digital experiences that make people's lives easier.
-            Specialized in creating robust, scalable, and user-friendly applications.
+            I am passionate about machine learning , networking and cloud infrastructure,
+             aiming to drive the dgital future by designing innovative, scalable solutions.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>

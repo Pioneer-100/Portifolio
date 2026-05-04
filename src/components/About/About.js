@@ -56,41 +56,22 @@ const About = () => {
         <div className="about-content">
           <div className="about-text" ref={textRef}>
             <p>
-              I'm a Computer Science student with a strong foundation in software development,
-              having worked with various technologies and languages,
-              and a growing passion for cloud engineering. 
-              Across numerous hands-on projects, I've built experience in web development, backend systems, and data science — 
-              and I'm now channeling that technical depth toward architecting scalable, cloud-native solutions.
+              I am a computer science student with experience in software development using multiple tecnologies, 
+               fascinated with cloud engineering, networking and machine learning.
+               I'm currently pursuing AWS cloud certifications, on the sidelines of my degree, to formalize and accelerate the journey to becoming a cloud engineer
+               A student who brings curiousity, discipline, focus and critical thinking, eager to learn and apply,
+                is what bests describes me.
             </p>
-            <p>
-              I'm currently pursuing cloud certifications to formalize and accelerate that journey,
-              driven by a belief that the future of software lives in the cloud.
-              I enjoy understanding not just how to build applications, 
-              but how to deploy, scale, and optimize them in modern cloud environments.
-            </p>
-            <p>
-              Whether it's designing resilient backend systems,
-              working with data pipelines, or exploring cloud 
-              infrastructure, I bring curiosity, discipline, 
-              and a problem-solving mindset to everything I build. 
-              I'm eager to grow at the crossroads of software engineering and cloud architecture
-              — and to contribute meaningfully wherever I land.
-            </p>
+            
           </div>
           
           <div className="about-stats" ref={statsRef}>
-            {/*<div className="stat-card">
-              <h3 className="stat-number">5+</h3>
-              <p className="stat-label">Years Experience</p>
-            </div>*/}
+            
             <div className="stat-card">
               <h3 className="stat-number">10+</h3>
               <p className="stat-label">Projects Completed</p>
             </div>
-            {/*<div className="stat-card">
-              <h3 className="stat-number">30+</h3>
-              <p className="stat-label">Happy Clients</p>
-            </div>*/}
+           
             <div className="stat-card">
               <h3 className="stat-number">10+</h3>
               <p className="stat-label">Technologies</p>

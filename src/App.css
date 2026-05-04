@@ -14,7 +14,7 @@
   bottom: 0;
   background-image: 
     linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
-    url('https://images.pexels.com/photos/12899121/pexels-photo-12899121.jpeg?auto=compress&cs=tinysrgb&w=1920');
+    url('https://images.pexels.com/photos/12899121/pexels-photo-12899121.jpeg?auto=compress&cs=tinysrgb&w=1920') ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
