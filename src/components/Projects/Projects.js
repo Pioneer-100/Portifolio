@@ -23,7 +23,7 @@ const Projects = () => {
       title: 'ZimForceX',
       description: 'A comprehensive employee-employer platform for job postings and professional networking specifically tailored for the Zimbabwean market.',
       image: zimForceXImg,
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Express'],
+      technologies: ['Next.js', 'Supabase','Typescript','Tailwind CSS'],
       category: 'fullstack',
       github: 'https://github.com/Pioneer-100/ZimForceX',
       demo: 'https://example.com'

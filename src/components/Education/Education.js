@@ -13,7 +13,13 @@ const Education = () => {
     }
   ];
 
-  const certifications = [];
+  const certifications = [
+    {
+      name: "CS50's Introduction to Artificial Intelligence with Python",
+      issuer: 'Harvard University',
+      year: '2025'
+    }
+  ];
 
   return (
     <section id="education" className="section education">
