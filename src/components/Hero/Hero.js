@@ -15,7 +15,7 @@ const Hero = () => {
           <h2 className="hero-subtitle">Aspiring Cloud Engineer</h2>
           <p className="hero-description">
             I am passionate about machine learning , networking and cloud infrastructure,
-             aiming to drive the dgital future by designing innovative, scalable solutions.
+             aiming to drive the digital future by designing innovative, scalable solutions.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>

@@ -5,7 +5,7 @@ import {
   FaHtml5, FaCss3Alt, FaJs, FaDatabase 
 } from 'react-icons/fa';
 import { 
-  SiMongodb, SiPostgresql, SiAmazonaws 
+  SiMongodb, SiPostgresql, SiAmazonaws, SiTypescript, SiKotlin 
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -15,6 +15,7 @@ const Skills = () => {
       skills: [
         { name: 'React', icon: <FaReact />, level: 90 },
         { name: 'JavaScript', icon: <FaJs />, level: 95 },
+        { name: 'TypeScript', icon: <SiTypescript />, level: 82 },
         { name: 'HTML5', icon: <FaHtml5 />, level: 95 },
         { name: 'CSS3', icon: <FaCss3Alt />, level: 90 },
       ]
@@ -24,6 +25,7 @@ const Skills = () => {
       skills: [
         { name: 'Node.js', icon: <FaNodeJs />, level: 88 },
         { name: 'Python', icon: <FaPython />, level: 85 },
+        { name: 'Kotlin', icon: <SiKotlin />, level: 78 },
         { name: 'SQL', icon: <FaDatabase />, level: 85 },
       ]
     },
