@@ -12,7 +12,7 @@ const Hero = () => {
           <h1 className="hero-title">
             Hi, I'm <span className="hero-title">Rolland </span>
           </h1>
-          <h2 className="hero-subtitle">Aspiring Cloud Engineer</h2>
+          <h2 className="hero-subtitle">Aspiring Machine Learning Engineer</h2>
           <p className="hero-description">
             I am passionate about machine learning , networking and cloud infrastructure,
              aiming to drive the digital future by designing innovative, scalable solutions.
