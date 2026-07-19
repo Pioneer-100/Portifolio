@@ -58,7 +58,6 @@ const About = () => {
             <p>
               I am a computer science student with experience in software development using multiple tecnologies, 
                fascinated with cloud engineering, networking and machine learning.
-               I'm currently pursuing AWS cloud certifications, on the sidelines of my degree, to formalize and accelerate the journey to becoming a cloud engineer
                A student who brings curiousity, discipline, focus and critical thinking, eager to learn and apply,
                 is what bests describes me.
             </p>
