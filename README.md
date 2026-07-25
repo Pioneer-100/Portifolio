@@ -180,3 +180,38 @@ Feel free to reach out if you have any questions or suggestions!
 ---
 
 Made with ❤️ using React
+
+## Troubleshooting
+
+- **Common runtime error:** "Uncaught TypeError: Cannot read properties of undefined (reading 'add')" related to `Helmet` or `HelmetDispatcher`.
+   - Cause: This typically happens when `react-helmet-async` is used but the app is not wrapped with a `HelmetProvider` at the root, or there are multiple conflicting helmet packages installed.
+   - Fix: Install `react-helmet-async` and wrap your app's root with `HelmetProvider` (usually in `src/index.js`):
+
+```javascript
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import { HelmetProvider } from 'react-helmet-async'
+import App from './App'
+
+const root = createRoot(document.getElementById('root'))
+root.render(
+   <HelmetProvider>
+      <App />
+   </HelmetProvider>
+)
+```
+
+- **If you still see the error:**
+   - Ensure there is only one helmet implementation installed. Remove `react-helmet` if you're using `react-helmet-async`:
+
+```bash
+npm uninstall react-helmet
+npm install react-helmet-async
+```
+
+- **General debugging tips:**
+   - Clear the browser cache and restart the dev server.
+   - Check the console stack trace to find which component is rendering `Helmet` without the provider.
+   - If using server-side rendering, provide a shared Helmet context on both server and client.
+
+If you'd like, I can add the `HelmetProvider` wrapper for you and fix the app automatically—tell me to proceed.
