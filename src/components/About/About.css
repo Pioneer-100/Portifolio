@@ -3,13 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
-  padding: 2rem;
-  margin: 1rem;
-  background: linear-gradient(150deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.6) 100%),    
-              url('https://plus.unsplash.com/premium_photo-1734518917088-836f5b67571d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1vZGVybiUyMGluZnJhc3RydWN0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500');
-  background-size: cover;
-  backdrop-filter: blur(10px);
 }
 
 .about .container {

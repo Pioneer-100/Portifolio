@@ -1,4 +1,4 @@
-﻿.App {
+.App {
   position: relative;
   width: 100%;
   overflow-x: hidden;
@@ -57,7 +57,7 @@
 }
 
 /* Identifiable container for most sections */
-.section:not(.about) {
+.section {
   background: rgba(30, 41, 59, 0.4); /* Slightly lighter than the base background */
   backdrop-filter: blur(16px);
   border-radius: 40px;
@@ -67,7 +67,7 @@
   padding: 40px 2rem;
 }
 
-.section:not(.about) .container {
+.section .container {
   padding: 0;
 }
 

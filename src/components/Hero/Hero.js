@@ -5,12 +5,12 @@ import ParticlesBackground from './ParticlesBackground';
 
 const Hero = () => {
   return (
-    <section id="home" className="hero">
-      <ParticlesBackground />
+    <section id="home" className="section hero">
+       <ParticlesBackground />
       <div className="container hero-container">
         <div className="hero-content">
-          <h1 className="hero-title">
-            Hi, I'm <span className="hero-title">Rolland </span>
+          <h1 className="hero-title-main">
+            Hi, I'm <span className="hero-title-name">Rolland</span>
           </h1>
           <h2 className="hero-subtitle">Aspiring Machine Learning Engineer</h2>
           <p className="hero-description">
