@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Helmet>
-          <title>Rolland Zumba | Computer Science Portfolio</title>
+          <title>Rolland Zumba | Rolland's Portfolio</title>
           <meta name="description" content="Portfolio of Rolland Zumba, a Computer Science student showcasing software engineering projects." />
           <link rel="canonical" href="https://vercel.app" />
       </Helmet>
