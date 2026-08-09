@@ -22,7 +22,7 @@ const Projects = () => {
       technologies: ['React', 'OpenWeather API', 'CSS3'],
       category: 'frontend',
       github: 'https://github.com/Pioneer-100/WeatherPal',
-      demo: 'https://example.com'
+      demo: 'https://weather-pal.vercel.app'
     },
     {
       title: 'ZimForceX',
@@ -31,7 +31,7 @@ const Projects = () => {
       technologies: ['Next.js', 'Supabase','Typescript','Tailwind CSS'],
       category: 'fullstack',
       github: 'https://github.com/Pioneer-100/ZimForceX',
-      demo: 'https://example.com'
+      demo: 'https://'
     },
     {
       title: 'TourAssist',
