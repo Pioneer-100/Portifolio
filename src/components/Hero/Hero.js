@@ -12,9 +12,9 @@ const Hero = () => {
           <h1 className="hero-title-main">
             Hi, I'm <span className="hero-title-name">Rolland</span>
           </h1>
-          <h2 className="hero-subtitle">Aspiring Machine Learning Engineer</h2>
+
           <p className="hero-description">
-            I am passionate about machine learning , networking and cloud infrastructure,
+            I am passionate about Internet of Things and Artificial Intelligence ,
              aiming to drive the digital future by designing innovative, scalable solutions.
           </p>
           <div className="hero-buttons">
